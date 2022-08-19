@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Deadline is Upon Us</title>
+    <link rel="stylesheet" href="css/mainWindow.css">
+</head>
+<body>
+    <nav id="nav">
+        <div id="menu-list"></div>
+        <div id = "menu-calendar"></div>
+    </nav>
+    <div id = "list-page">
+        <nav id ="tag-container">
+            <button class= "tag" id="tag-todo" type="button" onclick="openTag(event,'list-todo')">Todo List</button>
+            <button class= "tag" id="tag-done" type="button" onclick="openTag(event,'list-done')">Finished</button>
+            <button class= "tag" id="tag-past" type="button" onclick="openTag(event,'list-past')">Pass Due</button>
+        </nav> 
+        <div class=" container">
+            <ul id = "list-todo"></ul>
+            <button id = "addItem" onclick = "addItem()"></button>
+            <button class = "refreshBtn" onclick = "refreshList()"></button>
+        </div>
+        <div class=" container">
+            <ul id = "list-done"></ul>
+            <button class = "refreshBtn firstBtn " onclick = "refreshList()"></button>
+        </div>
+        <div class=" container">
+            <ul id = "list-past"></ul>
+            <button class = "refreshBtn firstBtn" onclick = "refreshList()"></button>
+        </div>
+    </div>
+    <div id = "timer-page">
+        <div class="timer-container">
+            <div class="mins">0</div>
+            <div>:</div>
+            <div class="secs">00</div>
+            <svg class = "progress-ring" height=" 120" width="120">
+                <circle
+                    class = "circle"
+                    stroke-width = "8"
+                    fill = "transparent"
+                    r="50"
+                    cx = "60"
+                    cy = "60"
+                />
+            </svg>
+        </div>
+        <div class="btn-group">
+            <button class="start">start focus</button>
+            <button class="reset">reset</button>
+            <button class="pause">pause</button>
+        </div>
+    </div>
+    <div id = "calendar-page">
+        <!-- <div class="calendar">
+            <div class = "date">Mon 6/25</div>
+            <ul class = "task-container">
+                <li><div class="text" >A very long task name GLIGLIGULIHOHUFTYDTYFLUHOUHUHILUGLIGYUFTKU</div><div class="time">12:00pm</div></li>
+            </ul>
+        </div> -->
+    </div>
+    <div id = "scroll-btn">
+        <div id = "btn-up"></div>
+        <div id = "btn-down"></div>
+    </div>
+    <script src = './js/mainWindow.js'>
+    </script>
+</body>
+</html>

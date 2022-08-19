@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Add Item</title>
+    <link rel="stylesheet" href="css/editTask.css">
+</head>
+<body>
+    <div class ="container">
+            <button class="close"></button>
+            <h1>
+                Edit Task
+            </h1>
+        <form>
+            <div class = "frame">
+                <div class="msg"></div>
+                <label class = "input-text">Task Name</label><br/>
+                <input type="text" id="item" autofocus><br/>
+                <label class = "input-text">Date</label><br/>
+                <input type="date" id="deadline-date"><br/>
+                <label class = "input-text">Time</label><br/>
+                <input type="time" value = "00:00" id="deadline-time"><br/>
+                <label>
+            </div>
+            <button id = "submitBtn" type="submit">Done</button>
+        </form>
+    </div>
+
+    <script src = "js/editTask.js"></script>
+</body>
+</html>
